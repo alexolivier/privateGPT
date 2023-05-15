@@ -42,7 +42,7 @@ def load_documents(source_dir: str) -> List[Document]:
     # return [load_single_document(file_path) for file_path in all_files]
     loader = SitemapLoader(
         "https://docs.cerbos.dev/sitemap.xml",
-        filter_urls=["https://docs.cerbos.dev/cerbos/latest/"]
+        filter_urls=["https://docs.cerbos.dev/cerbos/latest/policies/"]
     )
     return loader.load()
 
